@@ -2,7 +2,7 @@ import paramiko
 host_list = open("list.txt")
 port = 22
 username = "root"
-password = "VerintESX"
+password = input (f"\nroot password: ")
 #command = "/usr/lib/vmware/vmkmgmt_keyval/vmkmgmt_keyval -d"
 hosts = []
 for host in host_list.readlines():
